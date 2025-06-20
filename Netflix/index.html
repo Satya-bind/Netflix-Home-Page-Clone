@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix India</title>
+
+  <!-- Local stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional Google Font fallback (Netflix Sans isn’t publicly hosted) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ── HERO WRAPPER ─────────────────────────────────────────────── -->
+  <div class="hero-wrapper">
+
+    <!-- Dark overlay -->
+    <div class="overlay"></div>
+
+    <!-- ── TOP NAV ────────────────────────────────────────────────── -->
+    <nav class="navbar">
+      <img class="logo" src="photos/netflix logo svg.svg" alt="Netflix" />
+
+      <div class="nav-actions">
+        <button class="lang-btn">
+        <span class="globe"> 🌐 English ▼</span>
+        </button>
+
+        <button class="sign-in-btn">Sign In</button>
+      </div>
+    </nav>
+
+    <!-- ── Main hero jaha text hai───────────────────────────────────────── -->
+    <section class="hero-content">
+      <h1 class="title">
+        Unlimited movies, TV<br />
+        shows and more
+      </h1>
+
+      <h2 class="subtitle">Starts at ₹149.Cancel at any time.</h2>
+
+      <p class="sm-text">
+        Ready to watch? Enter your email to create or restart your membership.
+      </p>
+
+      <!-- E‑mail for apply-->
+      <form class="email-form">
+        <input type="email" placeholder="Email address" required />
+        <button type="submit" class="started-btn">
+          Get Started <span class="arrow">›</span>
+        </button>
+      </form>
+    </section>
+  </div>
+
+
+  <!-- new section for carousel and trending  -->
+
+<section class="trending-section">
+
+  <h2 class="trending-title">Trending Now</h2>
+
+  <div class="slider">
+
+    <!--  movie cards  -->
+    <ul class="slides">
+      <li class="card"><img src="photos/jaat.png"   alt="Jaat"  /></li>
+      <li class="card"><img src="photos/hit.png"    alt="Hit"   /></li>
+      <li class="card"><img src="photos/rana.png"   alt="Rana"  /></li>
+      <li class="card"><img src="photos/royals.png" alt="Royals"/></li>
+      <li class="card"><img src="photos/chaava.png" alt="Chaava"/></li>
+      
+    </ul>
+
+  </div>
+</section>
+
+<!-- ‑‑‑‑‑ MORE REASONS TO JOIN ‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑‑ -->
+<section class="reasons">
+  <h2 class="reasons__title">More reasons to join</h2>
+
+  <div class="reasons__grid">
+    <!-- card 1 -->
+    <article class="reason-card">
+      <h3>Enjoy on your TV</h3>
+      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu‑ray players and more.</p>
+      <img class="icon" src="photos/fg1.png" alt="">
+    </article>
+
+    <!-- card 2 -->
+    <article class="reason-card">
+      <h3>Download your <br>shows to watch <br>offline</h3>
+      <p>Save your favourites easily and always have something to watch.</p>
+      <img class="icon" src="photos/fg2.png" alt="">
+    </article>
+
+    <!-- card 3 -->
+    <article class="reason-card">
+      <h3>Watch everywhere</h3>
+      <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+      <img class="icon" src="photos/fg3.png" alt="">
+    </article>
+
+    <!-- card 4 -->
+    <article class="reason-card">
+      <h3>Create profiles for kids</h3>
+      <p>Send kids on adventures with their favourite characters in a space made just for them &mdash; free with your membership.</p>
+      <img class="icon" src="photos/fg4.png" alt="">
+    </article>
+  </div>
+</section>
+
+<!--  FAQ SECTION -->
+
+
+<section class="faq">
+  <h2 class="faq__title">Frequently Asked Questions</h2>
+
+  <div class="faq__list">
+    <!-- item 1-->
+    <details>
+      <summary>What is Netflix?</summary>
+      <p>
+        Netflix is a streaming service that offers a wide variety of award-winning
+        TV shows, movies, anime, documentaries and more on thousands of
+        internet-connected devices.
+      </p>
+    </details>
+
+    <!-- item 2 -->
+    <details>
+      <summary>How much does Netflix cost?</summary>
+      <p>
+        Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming
+        device, all for one fixed monthly fee. Plans start from ₹149 a month.
+      </p>
+    </details>
+
+    <!-- item 3-->
+    <details>
+      <summary>Where can I watch?</summary>
+      <p>
+        Watch anywhere, anytime. Sign in with your Netflix account to watch
+        instantly on the web at netflix.com from your personal computer or on
+        any internet connected device.
+      </p>
+    </details>
+
+    <!-- item 4 -->
+    <details>
+      <summary>How do I cancel?</summary>
+      <p>
+        Netflix is flexible. There are no pesky contracts and no commitments.
+        You can easily cancel your account online with two clicks.
+      </p>
+    </details>
+
+    <!-- ite,m -->
+    <details>
+      <summary>What can I watch on Netflix?</summary>
+      <p>
+        Netflix has an extensive library of feature films, documentaries, TV
+        shows, anime, award-winning Netflix originals, and more.
+      </p>
+    </details>
+
+    <!-- Item 6 -->
+    <details>
+      <summary>Is Netflix good for kids?</summary>
+      <p>
+        The Netflix Kids experience is included in your membership, giving
+        parents control while kids enjoy famil-friendly TV shows and films.
+      </p>
+    </details>
+  </div>
+
+  <!-- CTA: reuse your existing email form markup if you like -->
+  <p class="faq__cta-text">
+    Ready to watch? Enter your email to create or restart your membership.
+  </p>
+
+  <form class="email-form faq__email">
+    <input type="email" placeholder="Email address" required />
+    <button type="submit" class="started-btn">
+      Get Started<span class="arrow">›</span>
+    </button>
+  </form>
+</section>
+
+
+
+<!-- ── FOOTER ───────────────────────────────────────────────────── -->
+<footer class="nf-footer">
+  <div class="footer__container">
+
+    <!-- help line -->
+    <p class="footer__call">
+      Questions? Call
+      <a href="tel:0008009191743">000‑800‑919‑1743</a>
+    </p>
+
+    <!-- link grid -->
+    <ul class="footer__links">
+      <li></li><a href="#">FAQ</a></li>
+      <li><a href="#">Help Centre</a></li>
+      <li><a href="#">Account</a></li>
+      <li><a href="#">Media Centre</a></li>
+
+      <li><a href="#">Investor Relations</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Ways to Watch</a></li>
+      <li><a href="#">Terms of Use</a></li>
+
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Cookie Preferences</a></li>
+      <li><a href="#">Corporate Information</a></li>
+      <li><a href="#">Contact Us</a></li>
+
+      <li><a href="#">Speed Test</a></li>
+      <li><a href="#">Legal Notices</a></li>
+      <li><a href="#">Only on Netflix</a></li>
+    </ul>
+
+    <!-- language selector (reuse your existing .lang-btn) -->
+    <button class="lang-btn footer__lang">
+      <span class="globe">🌐</span> English ▼
+    </button>
+
+    <p class="footer__region">Netflix India</p>
+
+    <p class="footer__disclaimer">
+      This page is protected by Google reCAPTCHA to ensure you're not a bot.
+      <a href="#">Learn more.</a>
+    </p>
+  </div>
+</footer>
+
+  
+</body>
+</html>
